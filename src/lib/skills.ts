@@ -1,5 +1,7 @@
 export interface Skill {
 	name: string;
+	// level: int;
+	// type: 'language' | 'design';
 }
 
 const skills: Skill[] = [
