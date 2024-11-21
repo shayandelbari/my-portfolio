@@ -10,7 +10,8 @@ const experience: Experience[] = [
 	{
 		company: 'Company 1',
 		position: 'Position 1',
-		description: 'This is a description of my experience.'
+		description:
+			'Lorem ipsum odor amet, consectetuer adipiscing elit. Vivamus ultricies malesuada rutrum rutrum maximus. Fames commodo nulla ex volutpat porttitor. Quisque auctor purus bibendum molestie gravida. Adipiscing nisl imperdiet dui; condimentum velit eleifend phasellus nulla. Ultrices placerat scelerisque tempor consectetur id sodales accumsan euismod. Nisl sit quam facilisi; bibendum adipiscing etiam. Mollis feugiat aliquet pellentesque nisl commodo ut odio mattis.'
 	},
 	{
 		company: 'Company 2',
