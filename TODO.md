@@ -5,4 +5,4 @@
 - [ ] add animation.
 - [ ] add a noise texture to background of certain components.
 - [ ] set the primary and secondary color in tailwind config file.
-- [ ] add a circle in that lines up with the company title.
+- [x] add a circle in that lines up with the company title.
