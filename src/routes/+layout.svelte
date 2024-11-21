@@ -1,6 +1,7 @@
 <script lang="ts">
 	import '../app.css';
 	import About from './About.svelte';
+	import ToTop from './components/toTop.svelte';
 	import Contact from './Contact.svelte';
 	import Experience from './Experience.svelte';
 	import Menu from './Menu.svelte';
@@ -10,6 +11,7 @@
 </script>
 
 <Menu />
+<ToTop showAt={100} />
 
 <section class="px-5">
 	{@render children()}
