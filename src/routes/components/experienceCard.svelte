@@ -13,7 +13,7 @@
 	<div class="flex h-fit w-auto flex-col p-4">
 		<div class="flex flex-row">
 			<span
-				class="absolute -start-2 flex h-5 w-5 rounded-full border-4 border-white bg-green-600 dark:border-black"
+				class="absolute -start-2 flex h-5 w-5 rounded-full border-4 border-white bg-primary dark:border-black"
 			></span>
 			<div class="flex font-bold">{experience.company}</div>
 		</div>

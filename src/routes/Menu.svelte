@@ -13,7 +13,7 @@
 	<ul class="flex"><li><a href="/"><strong>Shayan</strong> Delbari</a></li></ul>
 	<ul class="flex space-x-4">
 		{#each menuItems as item}
-			<li class="hover:text-green-500"><a href={item.link}>{item.name}</a></li>
+			<li class="hover:text-primary"><a href={item.link}>{item.name}</a></li>
 		{/each}
 	</ul>
 </nav>
