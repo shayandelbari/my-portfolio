@@ -1,6 +1,7 @@
 # TODO-list
 
-- [ ] make the menu stick to the top of the page after scrolled out of view.
+- [x] make the menu stick to the top of the page after scrolled out of view.
+  - [ ] this effect is implemented with CSS and could be improved by using JS
 - [x] experience section should have the line inside the component and not outside!
 - [ ] add animation.
 - [ ] add a noise texture to background of certain components.
