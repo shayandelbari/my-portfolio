@@ -9,7 +9,7 @@
 	];
 </script>
 
-<div class="sticky top-0 z-40 border-b-[1px] border-b-gray-900 bg-black/55 backdrop-blur">
+<div class="sticky top-0 z-40 border-b-[1px] border-b-gray-900 bg-black/70 backdrop-blur">
 	<nav class="flex h-auto w-full flex-row justify-between p-5">
 		<ul class="flex"><li><a href="/"><strong>Shayan</strong> Delbari</a></li></ul>
 		<ul class="flex space-x-4">
