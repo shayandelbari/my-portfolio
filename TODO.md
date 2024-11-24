@@ -9,5 +9,5 @@
 - [x] add a circle in that lines up with the company title.
 - [ ] add page functionality to the project section.
 - [ ] add pop-up for when user click the projects.
-- [ ] implement smooth the scrolling for the anchor links.
+- [x] implement smooth the scrolling for the anchor links.
 - [ ] add a change theme button.
