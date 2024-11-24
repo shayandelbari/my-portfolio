@@ -1,7 +1,7 @@
 <script lang="ts">
 	import '../app.css';
 	import About from './About.svelte';
-	import ToTop from './components/toTop.svelte';
+	import ToTop from '../components/toTop.svelte';
 	import Contact from './Contact.svelte';
 	import Experience from './Experience.svelte';
 	import Menu from './Menu.svelte';
