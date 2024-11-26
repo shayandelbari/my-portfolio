@@ -11,5 +11,6 @@
 - [ ] add pop-up for when user click the projects.
 - [x] implement smooth the scrolling for the anchor links.
 - [ ] add a change theme button.
+    > the theme is set by the device theme right now - don't know if that's a good decision.
 - [x] add the functionality to highlight the active section.
 - [x] add animation for the toTop component.
