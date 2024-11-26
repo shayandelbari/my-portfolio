@@ -65,7 +65,7 @@
 
 <div class="sticky top-0 z-40">
 	<nav
-		class="flex h-auto w-full flex-row justify-between border-b-[1px] border-b-gray-900 bg-white/70 p-5 backdrop-blur-md dark:bg-black/70"
+		class="bg-noise flex h-auto w-full flex-row justify-between border-b-[1px] border-b-gray-900 bg-white/70 p-5 bg-blend-hue backdrop-blur-md dark:bg-black/70"
 	>
 		<ul class="flex">
 			<li>

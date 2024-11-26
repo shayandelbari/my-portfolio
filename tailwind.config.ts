@@ -5,6 +5,9 @@ export default {
 	darkMode: 'media',
 	theme: {
 		extend: {
+			backgroundImage: {
+				noise: "url('/src/assets/noise.svg')"
+			},
 			colors: {
 				white: '#fff',
 				black: '#000', // couldn't find a better way :(
