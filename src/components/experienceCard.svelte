@@ -1,8 +1,7 @@
 <script lang="ts">
-	export let index: number;
-	export let length: number;
 	import type { Experience } from '$lib/experience';
-	export let experience: Experience;
+	let { index, length, experience }: { index: number; length: number; experience: Experience } =
+		$props();
 </script>
 
 <div class="relative flex w-fit flex-row">

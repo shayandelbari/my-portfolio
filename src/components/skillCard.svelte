@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { Skill } from '$lib/skills';
-	export let skill: Skill;
+	let { skill }: { skill: Skill } = $props();
 </script>
 
 <div

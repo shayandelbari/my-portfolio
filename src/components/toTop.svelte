@@ -1,5 +1,5 @@
 <script lang="ts">
-	export let showAt: number;
+	let { showAt }: { showAt: number } = $props();
 
 	const gotoTop = () => {
 		window.scrollTo({
@@ -8,14 +8,14 @@
 		});
 	};
 
-	let scrollHeight: number = 0;
-	$: showButton = scrollHeight > showAt;
+	let scrollHeight: number = $state(0);
+	const showButton = $derived(scrollHeight > showAt);
 </script>
 
 <svelte:window bind:scrollY={scrollHeight} />
 
 <button
-	on:click={gotoTop}
+	onclick={gotoTop}
 	aria-label="Scroll to top"
 	class="fixed bottom-5 right-5 h-fit w-fit rounded-full bg-black p-2 duration-200 dark:bg-white"
 	class:translate-x-0={showButton}
