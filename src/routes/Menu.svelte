@@ -32,7 +32,7 @@
 		const observerOptions = {
 			root: null, // Use the viewport as the root
 			rootMargin: `-${offset}px 0px 0px 0px`, // Account for the header height
-			threshold: 0.9 // Consider section active when 60% of it is in view
+			threshold: 0.9 // Consider section active when 90% of it is in view
 		};
 
 		const observer = new IntersectionObserver((entries) => {
@@ -65,7 +65,7 @@
 
 <div class="sticky top-0 z-40">
 	<nav
-		class="flex h-auto w-full flex-row justify-between border-b-[1px] border-b-gray-900 bg-black/70 p-5 backdrop-blur"
+		class="flex h-auto w-full flex-row justify-between border-b-[1px] border-b-gray-900 bg-white/70 p-5 backdrop-blur dark:bg-black/70"
 	>
 		<ul class="flex">
 			<li>
