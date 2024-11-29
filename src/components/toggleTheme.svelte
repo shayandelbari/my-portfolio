@@ -1,32 +1,14 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
+	let dark: boolean = true;
 
-	// Theme state stored in the component
-	let dark: boolean = false;
-
-	// Toggles the theme
 	const toggleTheme = () => {
-		dark = !dark;
-		updateThemeClass();
-	};
-
-	// Updates the <html> element's class based on the current theme
-	const updateThemeClass = () => {
-		if (dark) {
+		if (!dark) {
 			document.documentElement.classList.add('dark');
-			document.documentElement.classList.remove('light');
 		} else {
-			document.documentElement.classList.add('light');
 			document.documentElement.classList.remove('dark');
 		}
+		dark = !dark;
 	};
-
-	// Check system preference on mount and apply the theme
-	onMount(() => {
-		const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-		dark = prefersDark;
-		updateThemeClass();
-	});
 </script>
 
 <button aria-label="Toggle theme" on:click={toggleTheme}>toggle theme</button>

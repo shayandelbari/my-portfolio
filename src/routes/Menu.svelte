@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import ToggleTheme from '../components/toggleTheme.svelte';
 
 	let menuItems = [
 		{ name: 'About', link: '#about', isActive: false },
@@ -65,7 +66,7 @@
 
 <div class="sticky top-0 z-40">
 	<nav
-		class="bg-noise flex h-auto w-full flex-row justify-between border-b-[1px] border-b-gray-900 bg-white/70 p-5 bg-blend-hue backdrop-blur-md dark:bg-black/70"
+		class="flex h-auto w-full flex-row justify-between border-b-[1px] border-b-gray-900 bg-white/70 bg-noise p-5 bg-blend-screen backdrop-blur-md dark:bg-black/70 dark:bg-blend-hue"
 	>
 		<ul class="flex">
 			<li>
@@ -73,6 +74,7 @@
 			</li>
 		</ul>
 		<ul class="flex space-x-4">
+			<ToggleTheme />
 			{#each menuItems as item}
 				<li>
 					<a
