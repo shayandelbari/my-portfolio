@@ -64,9 +64,9 @@
 	});
 </script>
 
-<div class="sticky top-0 z-40">
+<div class="sticky top-0 z-10">
 	<nav
-		class="flex h-auto w-full flex-row justify-between border-b-[1px] border-b-gray-900 bg-white/70 bg-noise p-5 bg-blend-screen backdrop-blur-md dark:bg-black/70 dark:bg-blend-hue"
+		class="flex h-auto w-full flex-row justify-between border-b-[1px] border-b-gray-200 bg-white/70 bg-noise p-5 bg-blend-lighten backdrop-blur-md dark:border-b-gray-900 dark:bg-black/70 dark:bg-blend-darken"
 	>
 		<ul class="flex">
 			<li>
@@ -76,7 +76,7 @@
 		<ul class="flex space-x-4">
 			<ToggleTheme />
 			{#each menuItems as item}
-				<li>
+				<li class="my-auto">
 					<a
 						href={item.link}
 						on:click={handleClick}
