@@ -30,9 +30,9 @@
 		onclick={(e) => {
 			e.stopPropagation();
 		}}
-		class="m-auto flex h-3/4 w-3/4 flex-col rounded-md bg-white shadow-xl dark:bg-black"
+		class="m-auto flex h-3/4 w-3/4 flex-col overflow-auto rounded-md bg-white shadow-xl dark:bg-black"
 	>
-		<div class="flex h-fit flex-row justify-between p-4">
+		<div class="sticky top-0 flex h-fit flex-row justify-between bg-white p-4 dark:bg-black">
 			<h1>{project.name}</h1>
 			<button onclick={togglePopup}>&times;</button>
 		</div>
