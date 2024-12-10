@@ -6,7 +6,18 @@
 
 	const togglePopup = () => {
 		show = !show;
-		document.documentElement.classList.toggle('overflow-hidden');
+		if (show) {
+			document.documentElement.classList.add('overflow-hidden');
+		} else {
+			document.documentElement.classList.remove('overflow-hidden');
+		}
+	};
+
+	const onkeydown = (e: KeyboardEvent) => {
+		if (e.key == 'Escape') {
+			show = false;
+			document.documentElement.classList.remove('overflow-hidden');
+		}
 	};
 </script>
 
@@ -16,6 +27,7 @@
 	<button onclick={togglePopup}>show pop up</button>
 </div>
 
+<svelte:window {onkeydown} />
 <!-- svelte-ignore a11y_click_events_have_key_events, a11y_no_static_element_interactions -->
 <div
 	class:hidden={!show}
