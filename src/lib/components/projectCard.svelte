@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { Project } from '$lib/projects';
+	import type { Project } from '$lib/data/projects';
 	import Expand from '$lib/icons/expand.svelte';
 	import { fade, scale } from 'svelte/transition';
 

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { Experience } from '$lib/experience';
+	import type { Experience } from '$lib/data/experience';
 	let { index, length, experience }: { index: number; length: number; experience: Experience } =
 		$props();
 </script>

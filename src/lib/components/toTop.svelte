@@ -1,4 +1,6 @@
 <script lang="ts">
+	import Top from '$lib/icons/top.svelte';
+
 	let { showAt }: { showAt: number } = $props();
 
 	const gotoTop = () => {
@@ -21,12 +23,5 @@
 	class:translate-x-0={showButton}
 	class:translate-x-16={!showButton}
 >
-	<svg
-		width="24px"
-		height="24px"
-		viewBox="0 0 24 24"
-		class="fill-none stroke-white stroke-2 dark:stroke-black"
-	>
-		<path d="M17 15L12 10L7 15" stroke-linecap="round" stroke-linejoin="round" />
-	</svg>
+	<Top class="stroke-white dark:stroke-black" />
 </button>
